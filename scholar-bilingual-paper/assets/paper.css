@@ -1,0 +1,80 @@
+:root{
+    --ink:#1c1c1c; --muted:#6b6b6b; --line:#e3e0d8;
+    --accent:#8a3324; --paper:#fbfaf7; --zh-bg:#fffdf8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:#efeee9; color:var(--ink);
+    font-family:"Noto Serif CJK SC","Source Han Serif SC","Songti SC",Georgia,"Times New Roman",serif;
+    line-height:1.75;
+  }
+  .paper{
+    max-width:1180px; margin:36px auto; background:var(--paper);
+    padding:64px 72px 80px; box-shadow:0 2px 24px rgba(0,0,0,.08);
+  }
+  header{text-align:center; border-bottom:2px solid var(--ink); padding-bottom:28px; margin-bottom:34px;}
+  .kicker{font-family:Georgia,serif; letter-spacing:.22em; font-size:11px; color:var(--accent); text-transform:uppercase; margin-bottom:18px;}
+  h1{font-size:30px; line-height:1.35; margin:0 0 10px; font-weight:700;}
+  h1 .zh-title{display:block; font-size:25px; margin-top:8px; color:#333; font-weight:600;}
+  .authors{font-family:Georgia,serif; font-size:15px; margin-top:18px;}
+  .authors b{font-weight:600;}
+  .affil{font-size:12.5px; color:var(--muted); margin-top:8px; line-height:1.7;}
+  .meta{font-size:11.5px; color:var(--muted); margin-top:14px; font-family:Georgia,serif;}
+  .notice{
+    background:#f4f1e8; border-left:3px solid var(--accent);
+    padding:10px 16px; font-size:12.5px; color:#5a5348; margin-bottom:34px;
+  }
+  h2{
+    font-size:20px; margin:44px 0 6px; padding-bottom:7px;
+    border-bottom:1px solid var(--line); font-weight:700;
+  }
+  h2 .cn{font-size:16px; color:var(--accent); margin-left:12px; font-weight:600;}
+  h3{font-size:16px; margin:30px 0 4px; font-weight:700;}
+  h3 .cn{font-size:13.5px; color:var(--accent); margin-left:10px; font-weight:600;}
+  .pair{
+    display:grid; grid-template-columns:1fr 1fr; gap:34px;
+    padding:13px 0; border-bottom:1px dashed #e8e5dc;
+  }
+  .pair:last-child{border-bottom:none;}
+  .en{font-family:Georgia,"Times New Roman",serif; font-size:14.5px; line-height:1.72; color:#3a3a3a; text-align:justify;}
+  .zh{font-size:14.8px; line-height:1.9; color:#111; text-align:justify;}
+  .en::before,.zh::before{
+    display:block; font-family:Georgia,serif; font-size:9.5px; letter-spacing:.16em;
+    color:#b3ada0; margin-bottom:5px; text-transform:uppercase;
+  }
+  .en::before{content:"EN";}
+  .zh::before{content:"中文"; letter-spacing:.08em;}
+  .lead .en,.lead .zh{font-size:15px;}
+  ul,ol{margin:8px 0; padding-left:22px;}
+  li{margin:4px 0;}
+  i,em{font-style:italic;}
+  .figure{margin:26px 0 30px; text-align:center;}
+  .figure img{max-width:100%; height:auto; border:1px solid #eceae3; background:#fff; padding:8px;}
+  .figcap{display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:10px; text-align:left;}
+  .figcap .en,.figcap .zh{font-size:12.6px; line-height:1.65;}
+  .figcap .en::before,.figcap .zh::before{display:none;}
+  .figcap .zh{color:#333;}
+  table{border-collapse:collapse; width:100%; font-size:12px; margin:14px auto 8px; font-family:Georgia,"Noto Serif CJK SC",serif;}
+  caption{caption-side:top; text-align:left; font-size:12.8px; padding-bottom:8px; color:#333;}
+  caption .cn{display:block; color:#555; margin-top:2px;}
+  th,td{border:1px solid #ddd8cc; padding:4px 7px; text-align:right;}
+  th{background:#f2efe7; font-weight:600; text-align:center;}
+  td:first-child,th:first-child{text-align:left;}
+  tbody tr:nth-child(even){background:#faf8f3;}
+  .table-wrap{overflow-x:auto; margin:24px 0;}
+  .algo{
+    border:1px solid #d9d4c7; background:#fffef9; margin:24px 0; padding:0;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; font-size:12.6px;
+  }
+  .algo .algo-head{background:#efece3; border-bottom:1px solid #d9d4c7; padding:7px 14px; font-weight:700; font-family:Georgia,serif;}
+  .algo .algo-body{padding:12px 16px; white-space:pre-wrap; line-height:1.7;}
+  .algo .kw{color:#8a3324; font-weight:600;}
+  .algo .cmt{color:#8a8578; font-style:italic;}
+  .algo .cn-line{color:#555; font-family:"Noto Serif CJK SC",serif; font-size:12px;}
+  .algo .algo-cap{font-size:11.8px; color:#666; padding:8px 14px; border-top:1px dashed #e0dbce; font-family:"Noto Serif CJK SC",serif;}
+  .qed{float:right;}
+  .small-caps{font-variant:small-caps; letter-spacing:.04em;}
+  .refs{font-size:12.1px; line-height:1.62; font-family:Georgia,serif; color:#333;}
+  .refs p{margin:3px 0; padding-left:30px; text-indent:-30px; text-align:left;}
+  .divider-note{font-size:12.5px; color:#777; text-align:center; margin:26px 0; font-style:italic;}
+  footer{margin-top:56px; border-top:1px solid var(--line); padding-top:16px; font-size:11.5px; color:#999; text-align:center;}

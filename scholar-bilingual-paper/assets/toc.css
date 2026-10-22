@@ -1,0 +1,26 @@
+html{scroll-behavior:smooth;}
+  h2,h3{scroll-margin-top:18px;}
+  .toc{
+    margin:0 0 30px; padding:16px 22px 18px;
+    border:1px solid #e0dbce; background:#fcfaf4;
+  }
+  .toc-title{font-size:11.5px; letter-spacing:.2em; color:var(--accent); font-family:Georgia,serif; border-bottom:1px solid #e6e1d5; padding-bottom:8px; margin-bottom:10px;}
+  .toc-grid{display:grid; grid-template-columns:1fr 1fr; gap:0 34px;}
+  .toc nav{display:flex; flex-direction:column;}
+  .toc a{display:flex; align-items:baseline; gap:7px; text-decoration:none; color:#2d2d2d; font-size:13.2px; line-height:1.55; padding:2.5px 0;}
+  .toc a:hover{color:var(--accent);}
+  .toc a.sub{padding-left:22px; font-size:12.6px; color:#4a4a4a;}
+  .toc a.sub .num{color:#9a9384; font-size:11px;}
+  .toc .num{font-family:Georgia,serif; color:var(--accent); min-width:30px; font-size:12px;}
+  .toc em{font-style:normal; font-family:Georgia,serif; font-size:11.2px; color:#9b9484; margin-left:auto; text-align:right;}
+  .to-top{position:fixed; right:22px; bottom:22px; z-index:20; background:var(--accent); color:#fff; text-decoration:none; font-size:12px; padding:7px 13px; border-radius:2px; box-shadow:0 2px 8px rgba(0,0,0,.18); font-family:"Noto Serif CJK SC",serif;}
+  .to-top:hover{opacity:.88;}
+
+  @media (max-width:900px){
+    .toc-grid{grid-template-columns:1fr; gap:0;}
+    .toc em{display:none;}
+  }
+  @media print{
+    .to-top{display:none;}
+    .toc{break-after:avoid;}
+  }
